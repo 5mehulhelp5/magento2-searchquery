@@ -1,4 +1,4 @@
-# Magiccart_SearchQuery
+# Magento 2 Search Query
 
 **Magiccart SearchQuery** is a Magento 2 extension that filters and sanitizes search queries before they are saved into search term popularity. It skips saving search terms that contain URLs, crypto-related keywords, or non-alphanumeric characters, reducing spam and irrelevant search terms in the store.
 
@@ -17,13 +17,14 @@
 
 ## Installation
 
-### Manual Installation
+[![Latest Stable Version](https://poser.pugx.org/magiccart/searchquery/v/stable)](https://packagist.org/packages/magiccart/searchquery)
+[![Total Downloads](https://poser.pugx.org/magiccart/searchquery/downloads)](https://packagist.org/packages/magiccart/searchquery)
+[![Daily Downloads](https://poser.pugx.org/magiccart/searchquery/d/daily)](https://packagist.org/packages/magiccart/searchquery)
 
-1. Create the directory `app/code/Magiccart/SearchQuery`.
-2. Copy the module files into that directory.
-3. Enable the module:
+### Composer Installation
 
 ```bash
+composer require magiccart/searchquery
 php bin/magento module:enable Magiccart_SearchQuery
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
